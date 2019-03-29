@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>MCCD Logo quiz</title>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+
+
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+		<!-- Fix Internet Explorer ______________________________________-->
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+			
+	</head>
+
+	<body>
+		<div class="main-page-wrapper">
+			<div id="contact-section">
+				<div class="container">
+					<div class="clear-fix contact-address-content">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="left-side">
+								<h2>LOGO QUIZ</h2>
+								<h4>Identify the logo's :</h4>
+								<h4>  &nbsp </h4>
+
+							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 1 : </p> <br> <img src="images/2/1.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 2 : </p> <br> <img src="images/2/2.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 3 : </p> <br> <img src="images/2/3.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 4 : </p> <br> <img src="images/2/4.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 5 : </p> <br> <img src="images/2/5.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+							</div> <!-- /.left-sid -->
+						</div> <!-- /.col- -->
+
+
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="map-area">
+								<!-- <h2>Our Location</h2> -->
+								<!-- <div id="map"></div> -->
+								<div class="send-message">
+									<br><br><br><br><br><br><br>
+
+						<form   autocomplete="off" action="/action_page.php" onsubmit="return sampleFunction()">
+     						<br><br><br><br>
+     						<div class="single-input">
+     							<h6>Logo 1: </h6><br><input placeholder="Enter answer for logo 1 here" type="text" id="logo1" size="7" name="logo1" required><br><br>
+     							<p ><font color="green" id="ans1c"></font> </p>
+     							<p ><font color="red" id="ans1w"></font> </p>
+     						</div>
+     						<br><br><br><br>
+     						<div class="single-input">
+     							<h6>Logo 2: </h6><br><input placeholder="Enter answer for logo 2 here" type="text" id="logo2" size="7" name="logo2" required><br><br>
+     							<p ><font color="green" id="ans2c"></font> </p>
+     							<p ><font color="red" id="ans2w"></font> </p>
+     						</div>
+     						<br><br><br><br>
+     						<div class="single-input">
+     							<h6>Logo 3: </h6><br><input placeholder="Enter answer for logo 3 here" type="text" id="logo3" size="7" name="logo3" required><br><br>
+     							<p ><font color="green" id="ans3c"></font> </p>
+     							<p ><font color="red" id="ans3w"></font> </p>
+     						</div>
+     						<br><br><br><br>
+     						<div class="single-input">
+     							<h6>Logo 4: </h6><br><input placeholder="Enter answer for logo 4 here" type="text" id="logo4" size="7" name="logo4" required><br><br>
+     							<p ><font color="green" id="ans4c"></font> </p>
+     							<p ><font color="red" id="ans4w"></font> </p>
+     						</div>
+     						<br><br><br><br>
+     						<div class="single-input">
+     							<h6>Logo 5: </h6><br><input placeholder="Enter answer for logo 5 here" type="text" id="logo5" size="7" name="logo5" required><br><br>
+     							<p ><font color="green" id="ans5c"></font> </p>
+     							<p ><font color="red" id="ans5w"></font> </p>
+     						</div>
+     						<br><br><br><br>
+     						
+     								<button style="margin-left: 38%" type="submit" value="Submit" align="center" class="tran3s p-color-bg"> SUBMIT</button>
+    					    </form>
+
+
+			
+	      <script>
+    function sampleFunction() {
+     var log1 = document.getElementById("logo1").value;
+      
+     var log2 = document.getElementById("logo2").value;
+      
+     var log3 = document.getElementById("logo3").value;
+      
+     var log4 = document.getElementById("logo4").value;
+      
+     var log5 = document.getElementById("logo5").value;
+      
+     var score = 0;
+
+     var an1 = "volvo"
+     var an2 = "audi"
+     var an3 = "benz"
+     var an4 = "nissan"
+     var an5 = "toyota"
+     
+     submitOK = "true";
+
+      if (log1.includes(an1)) {  //first answer 
+         score = ++score;  
+         document.getElementById("ans1c").innerHTML = "Correct " + an1 + " is the right answer "
+        }
+      
+      else {
+        
+         score = score + 0;
+         document.getElementById("ans1w").innerHTML = "Sorry, "+ log1 +" is a wrong answer and " + an1 + " is the right answer "
+        }
+
+      if (log2.includes(an2)) {   //second answer
+         score = ++score;  
+        document.getElementById("ans2c").innerHTML = "Correct " + an2 + " is the right answer "
+        }
+      
+      else {
+        
+         score = score + 0;
+         document.getElementById("ans2w").innerHTML = "Sorry, "+ log2 +" is a wrong answer and " + an2 + " is the right answer "
+        }  
+
+      if (log3.includes(an3)) {   //third answer
+         score = ++score;  
+        document.getElementById("ans3c").innerHTML = "Correct " +an3 + " is the right answer "
+        }
+      
+      else {
+        
+         score = score + 0;
+         document.getElementById("ans3w").innerHTML = "Sorry, "+ log3 +" is a wrong answer and " + an3 + " is the right answer "
+        }  
+      
+      if (log4.includes(an4)) {   //fourth answer
+         score = ++score;  
+        document.getElementById("ans4c").innerHTML = "Correct " + an4 + " is the right answer "
+        }
+      
+      else {
+        
+         score = score + 0;
+         document.getElementById("ans4w").innerHTML = "Sorry, "+ log4 +" is a wrong answer and " + an4 + " is the right answer "
+        }  
+      
+      if (log5.includes(an5)) {   //fifth answer
+         score = ++score;  
+        document.getElementById("ans5c").innerHTML = "Correct " + an5 + " is the right answer "
+        }
+      
+      else {
+        
+         score = score + 0;
+         document.getElementById("ans5w").innerHTML = "Sorry, "+ log5 +" is a wrong answer and " + an5 + " is the right answer "
+        }  
+     
+     if (submitOK == "false") {
+     return false;
+     }
+    }
+    </script>
+
+
+
+		<!-- Js File_________________________________ -->
+
+		<!-- j Query -->
+		<script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+
+		
+
+		<!-- Vendor js _________ -->
+		
+		<!-- revolution -->
+		<script src="vendor/revolution/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="vendor/revolution/revolution.extension.video.min.js"></script>
+
+		<!-- Google map js -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ8VrXgGZ3QSC-0XubNhuB2uKKCwqVaD0&callback=goMap" type="text/javascript"></script> <!-- Gmap Helper -->
+		<script src="vendor/gmaps.min.js"></script>
+		<!-- owl.carousel -->
+		<script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- mixitUp -->
+		<script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+		<!-- Progress Bar js -->
+		<script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
+		<!-- Validation -->
+		<script type="text/javascript" src="vendor/contact-form/validate.js"></script>
+		<script type="text/javascript" src="vendor/contact-form/jquery.form.js"></script>
+
+
+		<!-- Theme js -->
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/map-script.js"></script>
+
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>

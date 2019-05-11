@@ -43,6 +43,7 @@
 
 							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 1 : </p> <br> <img src="images/5/1.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
 							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 2 : </p> <br> <img src="images/5/2.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
+                            <h4  id="score" style=" margin-left: 30%;"></h4>
 							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 3 : </p> <br> <img src="images/5/3.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
 							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 4 : </p> <br> <img src="images/5/4.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
 							<p>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Logo 5 : </p> <br> <img src="images/5/5.jpg" style="width:100px;height:100px; alt="Flowers in Chania"> 
@@ -171,6 +172,14 @@
          score = score + 0;
          document.getElementById("ans5w").innerHTML = "Sorry, "+ log5 +" is a wrong answer and " + an5 + " is the right answer "
         }  
+
+         if (score < 5) {
+         document.getElementById("score").innerHTML = "Your Scored : " + score + " out of 5"  
+        }
+
+        else{
+         document.getElementById("score").innerHTML = "Congrats, <br> You Scored " + score + " out of 5, <br> You are a logo master"
+        }
      
      if (submitOK == "false") {
      return false;
